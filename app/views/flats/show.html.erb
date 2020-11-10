@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card p-5 mt-5">
+    <h1><%= @flat.name %></h1>
+    <h3><%= @flat.description %></h3>
+    <h4><%= @flat.address %></h4>
+    <p> 👸 <%= @flat.number_of_guests %> 💸 <%= @flat.price_per_night %></p>
+      <%= link_to edit_flat_path(@flat) do %>
+        <h1>✎</h1>
+      <% end %>
+    <%= link_to "See more flats", flats_path %>
+  </div>
+</div>
